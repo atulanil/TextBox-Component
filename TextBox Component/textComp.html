@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="InputBx">
+<head>
+<meta charset="ISO-8859-1">
+<title>Text Comp</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ <script>
+    document.write('<base href="' + document.location + '" />');
+  </script>
+   <script data-require="angular.js@1.2.x" src="https://code.angularjs.org/1.2.27/angular.js" data-semver="1.2.27"></script>
+  <script src="app.js"></script> 
+</head>
+<body ng-controller="MainCtrl">
+<div class="">
+ <div class="container" >  
+    <h1>Extended Input Box</h1>
+    <form role="form"> 
+        <div class="row"> 
+            <div class="form-group" >
+                <label for="code">Accounr number:</label>
+<account-number ng-model="aScopeProperty" field-id="accountNumber" label="Account Number" max-limit="18" is-required="true" place-holder="Account Number" 
+    pattern="only numbers" // provide the option to there RegEx empty-message="Please enter Account Number" invalid-message="Invalid Account Number">
+</account-number>
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+</body>
+</html>
